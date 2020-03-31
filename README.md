@@ -1,8 +1,7 @@
 
 ![Latest Release](https://img.shields.io/github/v/release/SpellholdStudios/Super_Firkraag?include_prereleases&color=darkred)<a name="top" id="top"> </a>
 ![Platform](https://img.shields.io/static/v1?label=platform&message=windows%20%7C%20Mac%20%7C%20linux&color=informational)
-![Language](https://img.shields.io/static/v1?label=language&message=English%20%7C%20French&20%7C%20German&20%7C%20Polish&20%7C%20Russian&color=limegreen)
-![Language](https://img.shields.io/static/v1?label=language&message=English%20%7C%20French%20%7C%20German%20%7C%20Russian%20%7C%20Chinese&color=limegreen)
+![Language](https://img.shields.io/static/v1?label=language&message=English%20%7C%20French%20%7C%20German%20%7C%20Polish%20%7C%20Russian&color=limegreen)
 
 <div align="center"><h1>Super Firkraag (WIP)</h1>
 
@@ -125,6 +124,7 @@ This mod should make Firkraag the incredibly powerful magic-user and dragon that
 - Renamed *setup-Firkraag.tp2* -> *firkraag.tp2* to support AL|EN's "Project Infinity".
 - Added missing `REQUIRE_PREDICATE` process to avoid installing the mod in inaccurate games.
 - Added component `DESIGNATED` number and "*super_firkraag*" `LABEL`.
+- Added missing `HANDLE_CHARSETS` function to convert string entries for EE games.
 
 - Proofread English and French translations.
 - Added Polish translation (thanks to SoM, part of CoB Clan).
