@@ -1,8 +1,7 @@
 
 ![Latest Release](https://img.shields.io/github/v/release/SpellholdStudios/Super_Firkraag?include_prereleases&color=darkred)<a name="top" id="top"> </a>
 ![Platform](https://img.shields.io/static/v1?label=platform&message=windows%20%7C%20Mac%20%7C%20linux&color=informational)
-![Language](https://img.shields.io/static/v1?label=language&message=English%20%7C%20French&color=limegreen)
-
+![Language](https://img.shields.io/static/v1?label=language&message=English%20%7C%20French&20%7C%20German&20%7C%20Polish&20%7C%20Russian&color=limegreen)
 
 <div align="center"><h1>Super Firkraag (WIP)</h1>
 
@@ -16,7 +15,7 @@
 **Mod Forum:** <a href="">Super Firkraag</a>  
 
 
-[Read the mod's readme](http://spellholdstudios.github.io/readmes/firkraag-readme-english.html) (<a href="http://spellholdstudios.github.io/readmes/adrian-readme-french.html">French</a>).
+[Read the mod's readme](http://spellholdstudios.github.io/readmes/firkraag-readme-english.html).
 
 [Download the mod at Spellhold Studios]().<br>
 
@@ -40,9 +39,9 @@ This mod should make Firkraag the incredibly powerful magic-user and dragon that
 <details><summary>Original note from the author</summary>
 <p>
 
-Let me assure you that I am not now, nor have I ever been a masochist. The actual original reason for this mod was a comment made on the Sorcerer's Place boards. This particular poster in question thought that even Weimer's Improved Dragon AI scripts were too weak. As I was in the process of studying the AI in-game, I decided to take on the challenge of making a Firkraag so tough that even the hardcore tacticians would be screaming for mercy. This is the first of those experimental scripts.
+###### Let me assure you that I am not now, nor have I ever been a masochist. The actual original reason for this mod was a comment made on the Sorcerer's Place boards. This particular poster in question thought that even Weimer's Improved Dragon AI scripts were too weak. As I was in the process of studying the AI in-game, I decided to take on the challenge of making a Firkraag so tough that even the hardcore tacticians would be screaming for mercy. This is the first of those experimental scripts.
 
-I am constantly attempting to improve this script until I come up with one that simply cannot be beaten until the very end of the game, as dragons should be. For reference, I was able to beat the Tactics Improved Firkraag in Chapter 2 with my Cavalier. That is not very flattering for what is supposed to be one of the most powerful beasts in all of Faerun.
+###### I am constantly attempting to improve this script until I come up with one that simply cannot be beaten until the very end of the game, as dragons should be. For reference, I was able to beat the Tactics Improved Firkraag in Chapter 2 with my Cavalier. That is not very flattering for what is supposed to be one of the most powerful beasts in all of Faerun.
 </p>
 </details><br>
 <div align="right"><a href="#top">Back to top</a></div>
@@ -83,8 +82,8 @@ I am constantly attempting to improve this script until I come up with one that 
 - Strifestrike: For coming up with the idea for this mod and being one of my original testers.
 - Beren: The first person that I know of to have beaten the Firkraag mod. He was my primary tester and a really swell guy!
 - Community at SP: For supporting my modding hobby and providing a good environment.
-- Weimer- I actually used his scripts as a basis for making this one. He also developed the WeiDU tool, which is what this mod uses.
-- The BiG World Textpack German project Team: German translation
+- Weimer: I actually used his scripts as a basis for making this one. He also developed the WeiDU tool, which is what this mod uses.
+- The BiG World Textpack German project Team: German translation.
 - SoM (part of CoB Clan): Polish translation.
 - A.E.R.I.E.ru Team: Russian translation.
 - Mathrim Cauthon: French translation.
@@ -119,10 +118,22 @@ I am constantly attempting to improve this script until I come up with one that 
 
 ## <a name="versions" id="versions"></a>Version History
 
+#### Version 1.6
+
+- Added Polish translation (thanks to SoM, part of CoB Clan).
+- Added German translation (from the BiG World Textpack German project).
+
+- Removed useless backup folder.
+- Reorganized mod architecture tree: created folders to sort files according to their types and renamed top folder CScripts to firkraag.
+
+- Updated WeiDU installer to v246.
+
+## 
+
 #### Version 1.5
 
-- Added Russian translation (Thanks to the A.E.R.I.E. Team).
-- Updated WeiDU installer to v246.
+- Added Russian translation (thanks to the A.E.R.I.E. Team).
+- Updated WeiDU installer to v231.
 
 ## 
 
