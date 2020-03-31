@@ -18,7 +18,7 @@ Baldur's Gate Trilogy and EET<h3>
 
 [Read the mod's readme](http://spellholdstudios.github.io/readmes/firkraag-readme-english.html).
 
-[Download the mod at Spellhold Studios]().<br>
+[Download the mod at Spellhold Studios](http://www.shsforums.net/files/file/1257-super-firkraag/).<br>
 
 &nbsp;
 
@@ -180,8 +180,8 @@ In addition to the methods above for removing individual components, you can com
 - Added missing `REQUIRE_PREDICATE` process to avoid installing the mod in inaccurate games.
 - Added component `DESIGNATED` number and "*super_firkraag*" `LABEL`.
 - Added missing `HANDLE_CHARSETS` function to convert string entries for EE games.
-
 - Added native BG2:EE and EET compatibilities.
+- Added missing amulet (fstalk.itm) giving protection from Wing buffet to Invisible Stalker (fstalke.cre).
 - Proofread English and French translations.
 - Added Polish translation (thanks to SoM, part of CoB Clan).
 - Added German translation (from the BiG World Textpack German project).
