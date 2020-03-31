@@ -1,11 +1,12 @@
 
 ![Latest Release](https://img.shields.io/github/v/release/SpellholdStudios/Super_Firkraag?include_prereleases&color=darkred)<a name="top" id="top"> </a>
 ![Platform](https://img.shields.io/static/v1?label=platform&message=windows%20%7C%20Mac%20%7C%20linux&color=informational)
-![Language](https://img.shields.io/static/v1?label=language&message=English%20%7C%20French&20%7C%20%German&20%7C%20%Polish&20%7C%20%Russian&color=limegreen)
+![Language](https://img.shields.io/static/v1?label=language&message=English%20%7C%20French&20%7C%20German&20%7C%20Polish&20%7C%20Russian&color=limegreen)
 
 <div align="center"><h1>Super Firkraag (WIP)</h1>
 
-<h3>A mod hosted by Spellhold Studios for Baldur's Gate II:ToB and Baldur's Gate Trilogy<h3>
+<h3>A mod hosted by Spellhold Studios for Baldur's Gate II: SoA and ToB (classical and EE games),<br>
+Baldur's Gate Trilogy and EET<h3>
 
 </div><br />
 
@@ -121,6 +122,9 @@ This mod should make Firkraag the incredibly powerful magic-user and dragon that
 #### Version 1.6
 
 - Renamed *setup-Firkraag.tp2* -> *firkraag.tp2* to support AL|EN's "Project Infinity".
+- Added missing `REQUIRE_PREDICATE` process to avoid installing the mod in inaccurate games.
+- Added component `DESIGNATED` number and "*super_firkraag*" `LABEL`.
+
 - Added Polish translation (thanks to SoM, part of CoB Clan).
 - Added German translation (from the BiG World Textpack German project).
 
