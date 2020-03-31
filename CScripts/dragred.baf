@@ -1,0 +1,318 @@
+IF
+  HPPercentLT(Myself,100)
+THEN
+  RESPONSE #100
+    Enemy()
+    Continue()
+END
+
+IF
+  Allegiance(Myself,ENEMY)
+  Detect(Player1)
+  Global("FirkraagWilting","LOCALS",0)
+  !HasItemEquiped("clck26",Player1)
+THEN
+  RESPONSE #100
+    DisplayString(Myself,@0)
+    ReallyForceSpell(Player1,WIZARD_ABI_DALZIMS_HORRID_WILTING)
+    ReallyForceSpell(Player1,WIZARD_ABI_DALZIMS_HORRID_WILTING)
+    ReallyForceSpell(Player1,WIZARD_ABI_DALZIMS_HORRID_WILTING)
+    SetGlobal("FirkraagWilting","LOCALS",1)
+END
+
+IF
+  Allegiance(Myself,ENEMY)
+  Detect(Player2)
+  Global("FirkraagWilting","LOCALS",0)
+  !HasItemEquiped("clck26",Player2)
+THEN
+  RESPONSE #100
+    DisplayString(Myself,@0)
+    ReallyForceSpell(Player2,WIZARD_ABI_DALZIMS_HORRID_WILTING)
+    ReallyForceSpell(Player2,WIZARD_ABI_DALZIMS_HORRID_WILTING)
+    ReallyForceSpell(Player2,WIZARD_ABI_DALZIMS_HORRID_WILTING)
+    SetGlobal("FirkraagWilting","LOCALS",1)
+END
+
+IF
+  Allegiance(Myself,ENEMY)
+  Detect(Player3)
+  Global("FirkraagWilting","LOCALS",0)
+  !HasItemEquiped("clck26",Player3)
+THEN
+  RESPONSE #100
+    DisplayString(Myself,@0)
+    ReallyForceSpell(Player3,WIZARD_ABI_DALZIMS_HORRID_WILTING)
+    ReallyForceSpell(Player3,WIZARD_ABI_DALZIMS_HORRID_WILTING)
+    ReallyForceSpell(Player3,WIZARD_ABI_DALZIMS_HORRID_WILTING)
+    SetGlobal("FirkraagWilting","LOCALS",1)
+END
+
+IF
+  Allegiance(Myself,ENEMY)
+  Detect(Player4)
+  Global("FirkraagWilting","LOCALS",0)
+  !HasItemEquiped("clck26",Player4)
+THEN
+  RESPONSE #100
+    DisplayString(Myself,@0)
+    ReallyForceSpell(Player4,WIZARD_ABI_DALZIMS_HORRID_WILTING)
+    ReallyForceSpell(Player4,WIZARD_ABI_DALZIMS_HORRID_WILTING)
+    ReallyForceSpell(Player4,WIZARD_ABI_DALZIMS_HORRID_WILTING)
+    SetGlobal("FirkraagWilting","LOCALS",1)
+END
+
+IF
+  Allegiance(Myself,ENEMY)
+  Detect(Player5)
+  Global("FirkraagWilting","LOCALS",0)
+  !HasItemEquiped("clck26",Player5)
+THEN
+  RESPONSE #100
+    DisplayString(Myself,@0)
+    ReallyForceSpell(Player5,WIZARD_ABI_DALZIMS_HORRID_WILTING)
+    ReallyForceSpell(Player5,WIZARD_ABI_DALZIMS_HORRID_WILTING)
+    ReallyForceSpell(Player5,WIZARD_ABI_DALZIMS_HORRID_WILTING)
+    SetGlobal("FirkraagWilting","LOCALS",1)
+END
+
+IF
+  Allegiance(Myself,ENEMY)
+  Detect(Player6)
+  Global("FirkraagWilting","LOCALS",0)
+  !HasItemEquiped("clck26",Player6)
+THEN
+  RESPONSE #100
+    DisplayString(Myself,@0)
+    ReallyForceSpell(Player6,WIZARD_ABI_DALZIMS_HORRID_WILTING)
+    ReallyForceSpell(Player6,WIZARD_ABI_DALZIMS_HORRID_WILTING)
+    ReallyForceSpell(Player6,WIZARD_ABI_DALZIMS_HORRID_WILTING)
+    SetGlobal("FirkraagWilting","LOCALS",1)
+END
+
+IF
+  Allegiance(Myself,ENEMY)
+  Global("FirkProtect","LOCALS",0)
+THEN
+  RESPONSE #100
+    ChangeClass(Myself,MAGE)
+    DisplayString(Myself,@1)
+    ApplySpell(Myself,WIZARD_ABSOLUTE_IMMUNITY)
+    ApplySpell(Myself,WIZARD_SPELL_IMMUNITY_ABJURATION)
+    ApplySpell(Myself,WIZARD_SPELL_TRAP)
+    ApplySpell(Myself,WIZARD_SPELL_SHIELD)
+    ApplySpell(Myself,WIZARD_SPELL_TURNING)
+    ApplySpell(Myself,WIZARD_IMPROVED_INVISIBILITY)
+    SetGlobal("FirkProtect","LOCALS",1)
+END
+
+// Summoned Creatures are for chumps
+IF
+  Allegiance(Myself,ENEMY)  
+  See(NearestEnemyOfType([GOODCUTOFF.0.0.0.0.SUMMONED]))
+  Global("DeathSpell","LOCALS",0)
+THEN
+  RESPONSE #100
+    ChangeClass(Myself,MAGE)
+    SetGlobal("DeathSpell","LOCALS",1)
+    ForceSpell(LastSeenBy(Myself),WIZARD_DEATH_SPELL)
+END
+
+
+IF
+  Allegiance(Myself,ENEMY)
+  Global("FirkMinions","LOCALS",0)
+THEN
+  RESPONSE #100
+     CreateCreatureObject("fstalke",Myself,0,0,0)
+     CreateCreatureObject("fstalke",Myself,0,0,0)
+     CreateCreatureObject("fstalke",Myself,0,0,0)
+     SetGlobal("FirkMinions","LOCALS",1)
+END
+
+IF
+  Detect(Player1)
+  Allegiance(Myself,ENEMY)
+  Global("FirkIllusions","LOCALS",0)
+THEN
+  RESPONSE #100
+    ChangeClass(Myself,MAGE)
+    ApplySpell(Myself,WIZARD_SIMULACRUM)  // This has got to be annoying for the player.
+    ApplySpell(Myself,WIZARD_IMPROVED_INVISIBILITY)
+    ApplySpell(Myself,WIZARD_SPELL_IMMUNITY_DIVINATION)
+    SetGlobal("FirkIllusions","LOCALS",1)
+END
+
+IF
+  Allegiance(Myself,ENEMY)
+  Exists(StrongestOf)
+  GlobalTimerExpired("RedDragonBreath","LOCALS")
+THEN
+  RESPONSE #100
+    ReallyForceSpell(StrongestOf,RED_DRAGON_BREATH)
+    ReallyForceSpell(StrongestOf,RED_DRAGON_HIT)
+    SetGlobalTimer("RedDragonBreath","LOCALS",18)
+END
+
+IF
+  Allegiance(Myself,ENEMY)
+  See(NearestEnemyOf(Myself))
+  Range(NearestEnemyOf(Myself),30)
+THEN
+  RESPONSE #100
+   ForceSpell(NearestEnemyOf(Myself),DRAGON_WING_BUFFET)
+   Continue()  // Continue after Innate Actions, otherwise he won't proceed to lower code
+END
+
+IF
+  See(StrongestOf)
+  Allegiance(Myself,ENEMY)
+  Global("FirkImprison","LOCALS",0)
+THEN
+  RESPONSE #100
+    ChangeClass(Myself,MAGE)
+    ForceSpell(StrongestOf,WIZARD_IMPRISONMENT)
+    SetGlobal("FirkImprison","LOCALS",1)
+END
+
+IF
+ Detect(Player1)
+ Global("FirkraagRemove","LOCALS",0)
+ Allegiance(Myself,ENEMY)
+THEN
+ RESPONSE #100
+  ChangeClass(Myself,MAGE)
+  SpellNoDec(Player1,WIZARD_DISPEL_MAGIC)
+  SetGlobal("FirkraagRemove","LOCALS",1)
+END
+
+IF
+ Allegiance(Myself,ENEMY)
+ Detect(StrongestOf)
+ Global("FirkraagGreater","LOCALS",0)
+THEN
+ RESPONSE #100
+  ChangeClass(Myself,MAGE)
+  SpellNoDec(StrongestOf,WIZARD_GREATER_MALISON)
+  SetGlobal("FirkraagGreater","LOCALS",1)
+END
+
+IF
+ Allegiance(Myself,ENEMY)
+ Detect(Player1)
+ Global("FirkraagLower","LOCALS",0)
+THEN
+ RESPONSE #100
+  ReallyForceSpell(Player1,DRAGON_FEAR)
+  ReallyForceSpell(Player1,DRAGON_LOWER_FIRE)
+  SetGlobal("FirkraagLower","LOCALS",1)
+  Continue()	// continue after innate actions
+END
+
+// Original had haste.  I think that's pathetic for a creature of Firkraag's stature.
+IF
+ Allegiance(Myself,ENEMY)
+ Global("FirkraagHaste","LOCALS",0)
+THEN
+ RESPONSE #100
+  ChangeClass(Myself,MAGE)
+  ForceSpell(Myself,WIZARD_IMPROVED_HASTE)
+  SetGlobal("FirkraagHaste","LOCALS",1)
+END
+
+IF
+  Allegiance(Myself,ENEMY)
+  Global("MagicMissile","LOCALS",0)
+  See(Player1)
+THEN
+  RESPONSE #100
+    SetGlobal("MagicMissile","LOCALS",1)
+    ChangeClass(Myself,MAGE)
+    ForceSpell(NearestEnemyOf(Myself),WIZARD_MAGIC_MISSILE)
+    ForceSpell(NearestEnemyOf(Myself),WIZARD_MAGIC_MISSILE)
+    ForceSpell(NearestEnemyOf(Myself),WIZARD_MAGIC_MISSILE)
+END
+
+IF
+  Allegiance(Myself,ENEMY)
+  See(Player1)
+THEN
+  RESPONSE #100
+    Attack(Player1)
+END
+
+// Ways to piss off Firkie
+IF
+ Allegiance(Myself,NEUTRAL)
+ OR(4)
+   AttackedBy([ANYTHING],DEFAULT)
+   SpellCast([GOODCUTOFF],0)		// triggers on any spell
+   SpellCastPriest([GOODCUTOFF],0)	// triggers on any spell
+   SpellCastInnate([GOODCUTOFF],0)	// triggers on any ability
+THEN
+ RESPONSE #100
+  DisplayString(Myself,@3)
+  DisplayString(Myself,@4)
+  Enemy()
+END
+
+//This should prevent cloudkill exploits
+IF
+  Allegiance(Myself,ENEMY)
+  !Detect(NearestEnemyOf(Myself))
+THEN
+  RESPONSE #100
+    Attack(Player1)
+END
+
+// Taunt the player
+IF
+  NumTimesTalkedToGT(0)
+THEN
+  RESPONSE #100
+    DisplayString(Myself,@2)
+    RandomWalkContinuous()
+END
+
+// Reset himself when resting
+IF
+  !Detect([PC])
+  Allegiance(Myself,ENEMY)
+  CombatCounter(0)
+  !HPPercentLT(Myself,100)
+THEN
+  RESPONSE #100
+    SetGlobal("FirkraagWilting","LOCALS",0)
+    SetGlobal("FirkProtect","LOCALS",0)
+    SetGlobal("FirkMinions","LOCALS",0)
+    SetGlobal("RedDragonBreath","LOCALS",0)
+    SetGlobal("FirkIllusions","LOCALS",0)
+    SetGlobal("FirkImprison","LOCALS",0)
+    SetGlobal("FirkraagRemove","LOCALS",0)
+    SetGlobal("FirkraagGreater","LOCALS",0)
+    SetGlobal("FirkraagLower","LOCALS",0)
+    SetGlobal("FirkraagHaste","LOCALS",0)
+    SetGlobal("MagicMissile","LOCALS",0)
+    ReallyForceSpell(Myself,CLERIC_HEAL)
+END
+
+IF
+  !Detect([PC])
+  Allegiance(Myself,ENEMY)
+  CombatCounter(0)
+  HPPercentLT(Myself,100)
+THEN
+  RESPONSE #100
+    SetGlobal("FirkraagWilting","LOCALS",0)
+    SetGlobal("FirkProtect","LOCALS",0)
+    SetGlobal("FirkMinions","LOCALS",0)
+    SetGlobal("RedDragonBreath","LOCALS",0)
+    SetGlobal("FirkIllusions","LOCALS",0)
+    SetGlobal("FirkImprison","LOCALS",0)
+    SetGlobal("FirkraagRemove","LOCALS",0)
+    SetGlobal("FirkraagGreater","LOCALS",0)
+    SetGlobal("FirkraagLower","LOCALS",0)
+    SetGlobal("FirkraagHaste","LOCALS",0)
+    SetGlobal("MagicMissile","LOCALS",0)
+    ReallyForceSpell(Myself,CLERIC_HEAL)
+END
