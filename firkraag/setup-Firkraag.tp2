@@ -1,0 +1,31 @@
+BACKUP ~CScripts/backup~
+AUTHOR ~archmage183@hotmail.com~
+
+LANGUAGE ~English~
+         ~english~
+		 ~CScripts/lang/english/fsetup.tra~
+LANGUAGE ~Francais (traduction : Mathrim Cauthon)~
+         ~french~
+		 ~CScripts/lang/french/fsetup.tra~
+LANGUAGE ~Russian (translation by AERIE.ru Team)~
+         ~russian~
+		 ~CScripts/lang/russian/fsetup.tra~
+LANGUAGE ~Deutsch (Uebersetzung von the BiG World Textpack German team)~
+         ~german~
+		 ~CScriptslang//german/fsetup.tra~
+LANGUAGE ~Polski (translation by SoM, part of CoB Clan)~
+         ~polish~
+		 ~CScripts/lang/polish/fsetup.tra~
+
+
+BEGIN @6
+
+COMPILE ~CScripts/files/dragred.baf~
+
+COPY ~CScripts/files/fstalke.cre~ ~override~
+ SAY NAME1 @5
+ SAY NAME2 @5
+
+COPY ~CScripts/files/fstalk.itm~ ~override~
+
+AT_INTERACTIVE_EXIT ~view firkreadme.txt~
