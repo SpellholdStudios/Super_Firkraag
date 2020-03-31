@@ -1,5 +1,10 @@
 BACKUP ~firkraag/backup~
-AUTHOR ~archmage183@hotmail.com~
+//AUTHOR ~archmage183@hotmail.com~
+SUPPORT ~Spellhold Studios at http://www.shsforums.net/forum/234-miscellaneous-released-mods/~
+
+VERSION ~v1.6~
+
+README ~firkraag/firkreadme.txt~
 
 ALWAYS
 
@@ -55,5 +60,3 @@ COPY ~firkraag/files/fstalke.cre~ ~override~
 	SAY NAME2 @5
 
 COPY ~firkraag/files/fstalk.itm~ ~override~
-
-AT_INTERACTIVE_EXIT ~view firkreadme.txt~

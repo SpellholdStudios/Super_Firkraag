@@ -60,10 +60,8 @@ Super Firkraag is a WeiDU mod, and therefore should be compatible with all WeiDU
 
 >Although it is not required for the Super Firkraag mod to function properly, classical game players are strongly recommended to download and install the latest version of the <a href="http://www.gibberlings3.net/bg2fixpack/">BG2 Fixpack</a> before proceeding with the installation of this mod.<br>
 
-If you want to have Tactics mod installed (www.weidu.org- I heartily recommend it) then it must be installed before this mod. Generally, Super Firkraag needs to be installed last.
+If you want to have Tactics mod installed (www.weidu.org. I heartily recommend it) then it must be installed before this mod. Generally, Super Firkraag needs to be installed last.
 <div align="right"><a href="#top">Back to top</a></div>
-
-Installation is simple. Run the executable that is included in the ZIP file. If you have other WeiDU mods, you'll need to run it twice (the installer will tell you). Simply select your favorite language and pick yes when asked to install.
 
 <hr>
 
@@ -176,10 +174,14 @@ In addition to the methods above for removing individual components, you can com
 
 - Added *firkraag.ini* metadata file to support AL|EN's "Project Infinity".
 - Renamed *setup-Firkraag.tp2* -> *firkraag.tp2* to support AL|EN's "Project Infinity".
+- Replaced `AUTHOR` keyword with `SUPPORT`.
+- Restored `VERSION` flag.
+- Replaced `AT_INTERACTIVE_EXIT` deprecated command with `README`.
 - Added missing `REQUIRE_PREDICATE` process to avoid installing the mod in inaccurate games.
 - Added component `DESIGNATED` number and "*super_firkraag*" `LABEL`.
 - Added missing `HANDLE_CHARSETS` function to convert string entries for EE games.
 
+- Added native BG2:EE and EET compatibilities.
 - Proofread English and French translations.
 - Added Polish translation (thanks to SoM, part of CoB Clan).
 - Added German translation (from the BiG World Textpack German project).
