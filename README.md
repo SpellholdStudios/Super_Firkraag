@@ -181,14 +181,15 @@ In addition to the methods above for removing individual components, you can com
 - Added component `DESIGNATED` number and "*super_firkraag*" `LABEL`.
 - Added missing `HANDLE_CHARSETS` function to convert string entries for EE games.
 - Added native BG2:EE and EET compatibilities.
+- Set a new override script to firkra02.cre (*fdragred.bcs*) to avoid overwriting other red dragons scripts (*dragred.bcs*).
 - Added missing amulet (fstalk.itm) giving protection from Wing buffet to Invisible Stalker (fstalke.cre).
 - Proofread English and French translations.
 - Added Polish translation (thanks to SoM, part of CoB Clan).
 - Added German translation (from the BiG World Textpack German project).
-
+- Updated and renamed readme file to *firkraag-readme-english.txt* and moved it into new readme folder.
 - Removed useless backup folder.
-- Reorganized mod architecture tree: created folders to sort files according to their types and renamed top folder *CScripts* to *firkraag*.
-
+- Reorganized mod architecture tree: created folders to sort files according to their types and renamed top folder *CScripts* -> *firkraag*.
+- Included Linux and Mac Os X versions in the same package (thanks AL|EN's Infinity Auto Packager tool!).
 - Updated WeiDU installer to v246.
 
 ## 

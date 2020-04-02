@@ -4,7 +4,7 @@ SUPPORT ~Spellhold Studios at http://www.shsforums.net/forum/234-miscellaneous-r
 
 VERSION ~v1.6~
 
-README ~firkraag/firkreadme.txt~
+README ~firkraag/readme/firkraag-readme.txt~
 
 ALWAYS
 
@@ -53,7 +53,11 @@ BEGIN @11
 DESIGNATED 0 LABEL ~super_firkraag~
 REQUIRE_PREDICATE GAME_IS ~bg2 tob bgt bg2ee eet~ @12 /* You must have BG2, ToB, BGT, BG2:EE or EET installed to install Super Firkraag Mod for BG2. */
 
-COMPILE ~firkraag/files/dragred.baf~
+COMPILE ~firkraag/files/fdragred.baf~
+
+COPY_EXISTING ~firkra02.cre~ ~override~
+	WRITE_ASCIIE SCRIPT_OVERRIDE ~fdragred~ #8
+BUT_ONLY
 
 COPY ~firkraag/files/fstalke.cre~ ~override~
 	SAY NAME1 @5
