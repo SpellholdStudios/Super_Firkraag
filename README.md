@@ -175,7 +175,7 @@ In addition to the methods above for removing individual components, you can com
 - Added *firkraag.ini* metadata file to support AL|EN's "Project Infinity".
 - Renamed *setup-Firkraag.tp2* -> *firkraag.tp2* to support AL|EN's "Project Infinity".
 - Replaced `AUTHOR` keyword with `SUPPORT`.
-- Restored `VERSION` flag.
+- Added `VERSION` flag.
 - Replaced `AT_INTERACTIVE_EXIT` deprecated command with `README`.
 - Added missing `REQUIRE_PREDICATE` process to avoid installing the mod in inaccurate games.
 - Added component `DESIGNATED` number and "*super_firkraag*" `LABEL`.
@@ -191,6 +191,7 @@ In addition to the methods above for removing individual components, you can com
 - Reorganized mod architecture tree: created folders to sort files according to their types and renamed top folder *CScripts* -> *firkraag*.
 - Included Linux and Mac Os X versions in the same package (thanks AL|EN's Infinity Auto Packager tool!).
 - Updated WeiDU installer to v246.
+- Uploaded mod to official Spellhold Studios GitHub mirror account.
 
 ## 
 

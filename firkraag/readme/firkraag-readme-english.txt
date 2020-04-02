@@ -95,6 +95,7 @@ Version 1.6
 - Reorganized mod architecture tree: created folders to sort files according to their types and renamed top folder CScripts -> firkraag.
 - Included Linux and Mac Os X versions in the same package (thanks AL|EN's Infinity Auto Packager tool!).
 - Updated WeiDU installer to v246.
+- Uploaded mod to official Spellhold Studios GitHub mirror account.
 
 Version 1.5
 - Added Russian Translation (Thanks to the A.E.R.I.E. Team).
