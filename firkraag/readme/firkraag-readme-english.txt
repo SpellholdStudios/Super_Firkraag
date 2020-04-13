@@ -35,7 +35,7 @@ Installation is simple. Run the executable that is included in the ZIP file. Sim
 III. Known Bugs
 ================
 
-Seems tp be deprecated since a while!!!
+Seems to be deprecated since a while!!!
 The only known bug is a PARSE_ERROR command on a .sto file in your override directory (possibly a mod?). Ignore this. I have no idea what causes this, but it doesn't seem to affect anything. This mod doesn't touch that file, regardless.
 
 
@@ -78,19 +78,20 @@ Version 1.6
 
 - Added firkraag.ini metadata file to support AL|EN's "Project Infinity".
 - Renamed setup-Firkraag.tp2 -> firkraag.tp2 to support AL|EN's "Project Infinity".
-- Replaced AUTHOR keyword with SUPPORT.
-- Added VERSION flag.
-- Replaced AT_INTERACTIVE_EXIT deprecated command with README.
-- Added missing REQUIRE_PREDICATE process to avoid installing the mod in inaccurate games.
-- Added component DESIGNATED number and "super_firkraag" `LABEL`.
-- Added missing HANDLE_CHARSETS function to convert string entries for EE games.
+- Replaced `AUTHOR` keyword with `SUPPORT`.
+- Added `VERSION` flag.
+- Replaced `AT_INTERACTIVE_EXIT` deprecated command with README.
+- Added missing `REQUIRE_PREDICATE` process to avoid installing the mod in inaccurate games.
+- Added component `DESIGNATED` number and "super_firkraag" `LABEL`.
+- Added missing `HANDLE_CHARSETS` function to convert string entries for EE games.
 - Added native BG2:EE and EET compatibilities.
-- Added missing amulet (fstalk.itm) giving protection from Wing buffet to Invisible Stalker (fstalke.cre).
-- Proofread English and French translations.
 - Set a new override script to firkra02.cre (fdragred.bcs) to avoid overwriting other red dragons scripts (dragred.bcs).
+- Added missing amulet (fstalk.itm) giving protection from Wing buffet to Invisible Stalker (fstalke.cre).
+- Added French, German and Polish WeiDU prompts.
+- Proofread English and French translations.
 - Added Polish translation (thanks to SoM, part of CoB Clan).
 - Added German translation (from the BiG World Textpack German project).
-- Updated and renamed readme file to firkraag-readme-english.txt and moved it into new readme folder.
+- Wrote a new firkraag-readme-english.html readme file and moved it into new "readme" folder.
 - Removed useless backup folder.
 - Reorganized mod architecture tree: created folders to sort files according to their types and renamed top folder CScripts -> firkraag.
 - Included Linux and Mac Os X versions in the same package (thanks AL|EN's Infinity Auto Packager tool!).
@@ -98,11 +99,11 @@ Version 1.6
 - Uploaded mod to official Spellhold Studios GitHub mirror account.
 
 Version 1.5
-- Added Russian Translation (Thanks to the A.E.R.I.E. Team).
+- Added Russian translation (Thanks to the A.E.R.I.E. Team).
 - Updated WeiDU installer to v231.
 
 Version 1.4
-- Added French Translation (Once again, thanks to Mathrim Cauthon).
+- Added French translation (Once again, thanks to Mathrim Cauthon).
 
 Version 1.3
 - Fixed a bug that was causing the script to not compile correctly. Thanks Andrew!

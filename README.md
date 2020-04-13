@@ -3,7 +3,7 @@
 ![Platform](https://img.shields.io/static/v1?label=platform&message=windows%20%7C%20Mac%20%7C%20linux&color=informational)
 ![Language](https://img.shields.io/static/v1?label=language&message=English%20%7C%20French%20%7C%20German%20%7C%20Polish%20%7C%20Russian&color=limegreen)
 
-<div align="center"><h1>Super Firkraag (WIP)</h1>
+<div align="center"><h1>Super Firkraag</h1>
 
 <h3>A mod hosted by Spellhold Studios for Baldur's Gate II: SoA and ToB (classical and EE games),<br>
 Baldur's Gate Trilogy and EET<h3>
@@ -12,13 +12,13 @@ Baldur's Gate Trilogy and EET<h3>
 
 
 **Author:** Rastor  
-**Mod Website:** <a href="http://www.shsforums.net/forum/234-miscellaneous-released-mods/">Spellhold Studios</a>  
+**Mod Website:** <a href="http://www.shsforums.net/forum/127-mod-resurrections/">Spellhold Studios</a>  
 **Mod Forum:** <a href="http://www.shsforums.net/topic/60737-super-firkraag-updated-to-v16-ee-compatible/">Super Firkraag</a>  
 
 
-[Read the mod's readme](http://spellholdstudios.github.io/readmes/firkraag-readme-english.html).
+[Read the mod's readme](http://spellholdstudios.github.io/readmes/firkraag-readme-english.html)
 
-[Download the mod at Spellhold Studios](http://www.shsforums.net/files/file/1257-super-firkraag/).<br>
+[Download the mod at Spellhold Studios](http://www.shsforums.net/files/file/1257-super-firkraag/)<br>
 
 &nbsp;
 
@@ -84,6 +84,8 @@ The Enhanced Editions are actively supported games. Please note that every patch
 
 ## 
 
+#### Windows
+
 Super Firkraag for BGII for Windows is distributed as an extractable compressed archive and includes a WeiDU installer.
 
 Extract the contents of the mod archive into the folder of the game you wish to modify (*the folder which contains the "CHITIN.KEY" file*), using <a href="http://www.7-zip.org/download.html">7zip</a>, <a href="http://www.rarlab.com/download.htm">WinRAR</a>, or another file compression utility that handles .zip files. On successful extraction, there should be a :file_folder: firkraag folder and a setup-firkraag.exe file in your game folder. To install, simply double-click **`setup-firkraag.exe`** and follow the instructions on screen.
@@ -125,7 +127,7 @@ In addition to the methods above for removing individual components, you can com
 
 ## <a name="credits" id="credits"></a>Credits and Acknowledgements
 
-**Author:** Rastor  
+**Author:** <a href="http://www.shsforums.net/user/1153-rastor/">Rastor</a>  
 
 ## 
 
@@ -170,7 +172,7 @@ In addition to the methods above for removing individual components, you can com
 
 ## <a name="versions" id="versions"></a>Version History
 
-#### Version 1.6
+#### Version 1.6 (13 April 2020)
 
 - Added *firkraag.ini* metadata file to support AL|EN's "Project Infinity".
 - Renamed *setup-Firkraag.tp2* -> *firkraag.tp2* to support AL|EN's "Project Infinity".
@@ -183,10 +185,11 @@ In addition to the methods above for removing individual components, you can com
 - Added native BG2:EE and EET compatibilities.
 - Set a new override script to firkra02.cre (*fdragred.bcs*) to avoid overwriting other red dragons scripts (*dragred.bcs*).
 - Added missing amulet (fstalk.itm) giving protection from Wing buffet to Invisible Stalker (fstalke.cre).
+- Added French, German and Polish WeiDU prompts.
 - Proofread English and French translations.
 - Added Polish translation (thanks to SoM, part of CoB Clan).
 - Added German translation (from the BiG World Textpack German project).
-- Updated and renamed readme file to *firkraag-readme-english.txt* and moved it into new readme folder.
+- Wrote a new *firkraag-readme-english.html* readme file and moved it into new "*readme*" folder.
 - Removed useless backup folder.
 - Reorganized mod architecture tree: created folders to sort files according to their types and renamed top folder *CScripts* -> *firkraag*.
 - Included Linux and Mac Os X versions in the same package (thanks AL|EN's Infinity Auto Packager tool!).
